@@ -1,0 +1,290 @@
+*{
+    max-width: 100%;
+    margin:0;
+
+}
+
+
+
+.top{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+header{
+    background-color:black;
+    position: fixed;
+    left: 0;
+    top:0;
+    right:0;
+    height: 150px;
+}
+
+.fondo_2{
+    background-color: black;
+}
+.menu-text-2{
+    display: inline-block;
+    color:black;
+    text-decoration: none;
+
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+
+
+.menu-2:hover{
+background-color: yellow;
+text-align: left;
+}
+
+.submenu:hover{
+
+}
+
+.menu-2{
+margin-left: -40px;
+}
+
+.main_menu:hover>.submenu{
+    display: block;
+    background-color: white;
+}
+
+.fondo_1{
+    background-color:  #E2CCE8; 
+}
+
+#logo{
+    height: 150px;
+}
+
+
+
+.menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+}
+
+.text_title{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}
+
+.main_menu{
+    display: inline-block;
+    margin-right: 20px ;
+    color: white;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.menu_text{
+ color: white;
+font-family: Tahoma;
+ 
+}
+.slider{
+    padding-top: 81px;
+    overflow: hidden;
+}
+
+.slider ul{
+    
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 100%;
+
+}
+
+.slider li{
+    width: 100%;
+    list-style:none;
+
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+
+}
+
+hr{
+    width: auto;
+    height:3px;
+    background-color: #000; 
+    margin-top: -17px;
+}
+@keyframes cambio{
+    0%{margin-left: -2%;}
+    20%{margin-left: -2%;}
+    
+    25%{margin-left: -15%;}
+    35%{margin-left: -15%;}
+    
+    40%{margin-left: -35%;}
+    50%{margin-left: -35%;}
+
+    65%{margin-left: -40%;}
+    70%{margin-left: -40%;} 
+} 
+
+.intro{
+    font-family: abel;
+    font-weight: 400px;
+    font-style: normal;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 1.3em;
+    margin-right: 200px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-top: 200px;
+}
+.rubro{
+    font-family: abel;
+    font-size: 20px;
+    color: blue;
+    margin-left: 300px;
+
+}
+footer{
+    background-color: pink;
+    left: 0;
+    right: 0;
+ 
+}
+
+.direccion{
+    font-family: abel;
+    font-weight: 400px;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-left: 80px;
+    margin-right:600px;
+    margin-top: 20px;
+}
+
+.Correo{
+    font-family: abel;
+    font-weight: 400px;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-left: 500px;
+    margin-right:20px;
+    margin-top: -40px;
+}
+
+.fblogo{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 1120px;
+    margin-top: -40px;
+}
+.iglogo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 1220px;
+    margin-top: -40px;  
+}
+.twlogo{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 1320px;
+    margin-top: -50px;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 200px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+
+
+.container .card img{
+    width: 330px;
+    height: 320px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}

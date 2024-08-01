@@ -1,0 +1,168 @@
+header{
+	background-color:black;
+    position: fixed;
+    left: 0;
+    top:0;
+    right:0;
+    height: 150px;
+}
+
+.fondo_1{
+	background-color:  #E2CCE8; 
+}
+
+#logo{
+	height: 150px;
+}
+
+
+
+.menu{
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	color: white;
+}
+
+.text_title{
+	text-align: center;
+	color: white;
+	font-size: 80px;
+}
+
+.main_menu{
+	display: inline-block;
+	margin-right: 20px ;
+	color: white;
+	padding: 5px;
+	border-radius: 100px;
+}
+
+.menu_text{
+ color: white;
+font-family: Tahoma;
+text-decoration: none;
+ 
+}
+.slider{
+	width: 500%;
+
+	padding-top: 120px;
+	overflow: hidden;
+}
+
+.slider ul{
+	
+	display: flex;
+	animation: cambio 20s infinite alternate linear;
+	width: 100%;
+
+}
+
+.slider li{
+	width: 100%;
+	list-style:none;
+
+}
+
+.slider img{
+	width: 100%;
+	height: 100%;
+
+}
+
+hr{
+	width: auto;
+	height:3px;
+	background-color: #000; 
+	margin-top: -17px;
+}
+@keyframes cambio{
+	0%{margin-left: -2%;}
+	20%{margin-left: -2%;}
+	
+	25%{margin-left: -15%;}
+	35%{margin-left: -15%;}
+	
+	40%{margin-left: -35%;}
+	50%{margin-left: -35%;}
+
+	65%{margin-left: -40%;}
+	70%{margin-left: -40%;}	
+} 
+
+.intro{
+	font-family: abel;
+	font-weight: 400px;
+	font-style: normal;
+	color: #000;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	line-height: 1.3em;
+	margin-right: 200px;
+	margin-left: 50px;
+	margin-top: 20px;
+	padding-top: 200px;
+}
+.rubro{
+	font-family: abel;
+	font-size: 20px;
+	color: blue;
+	margin-left: 300px;
+
+}
+footer{
+	bottom: 0;
+	background-color: pink;
+	left: 0;
+	right: 0;
+	
+}
+
+.direccion{
+	font-family: abel;
+	font-weight: 400px;
+	font-style: normal;
+	color: black;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 20px;
+	margin-left: 80px;
+	margin-right:600px;
+	margin-top: 20px;
+}
+
+.Correo{
+	font-family: abel;
+	font-weight: 400px;
+	font-style: normal;
+	color: black;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 20px;
+	margin-left: 500px;
+	margin-right:20px;
+	margin-top: -70px;
+}
+
+.fblogo{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin-left: 1120px;
+	margin-top: -70px;
+}
+.iglogo{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	margin-left: 1220px;
+	margin-top: -70px;	
+}
+.twlogo{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	margin-left: 1320px;
+	margin-top: -80px;
+}
