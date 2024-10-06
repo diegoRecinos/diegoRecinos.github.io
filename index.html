@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live HLS Stream Test</title>
+    <title>Public Camera Feed Test</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <h1>Live Stream Test</h1>
+    <h1>Live Public Camera Feed: Times Square</h1>
     <video id="video" controls></video>
     
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
@@ -26,14 +26,14 @@
         if (Hls.isSupported()) {
             var video = document.getElementById('video');
             var hls = new Hls();
-            hls.loadSource('https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8');
+            hls.loadSource('https://cdn.skylinewebcams.com/live.m3u8?a=5ktc94hf6li4');
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED, function() {
                 video.play();
             });
         }
         else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
+            video.src = 'https://cdn.skylinewebcams.com/live.m3u8?a=5ktc94hf6li4';
         }
     </script>
 </body>
