@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Exporta archivos estáticos
+  output: 'export',
   images: {
-    unoptimized: true, // Desactiva optimización de imágenes
+    unoptimized: true,
   },
-  assetPrefix: './', // Rutas relativas para recursos estáticos
-  basePath: '/diegoRecinos.github.io', // BasePath coincide con el nombre del repositorio
+  // Remover basePath y assetPrefix si es un repositorio username.github.io
 };
-
 module.exports = nextConfig;
