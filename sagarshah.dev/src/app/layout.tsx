@@ -1,13 +1,10 @@
 import Script from 'next/script';
-import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
 
 import './globals.css';
 import Header from '@/components/layout/header';
 import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
-
-const inter = Inter({ subsets: ['latin'] });
 
 const title = 'Sagar Shah | Full Stack Developer From Ahmedabad, India.';
 const description =
@@ -64,24 +61,35 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
-      {googleAnalyticsId ? (
-        <head>
-          <Script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-          ></Script>
-          <Script id="google-anayltics-script">
-            {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', '${googleAnalyticsId}');
-          `}
-          </Script>
-        </head>
-      ) : null}
-      <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
+      <head>
+        {/* Carga manual de Google Fonts */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+        />
+        {/* Configuración de Google Analytics si existe */}
+        {googleAnalyticsId && (
+          <>
+            <Script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+            />
+            <Script id="google-anayltics-script">
+              {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', '${googleAnalyticsId}');
+            `}
+            </Script>
+          </>
+        )}
+      </head>
+      <body
+        className="bg-gray text-gray-600 antialiased"
+        style={{ fontFamily: 'Inter, sans-serif' }} // Estilo con la fuente manual
+      >
         <Providers>
           <Header />
           <main className="flex min-h-screen w-full flex-col">{children}</main>
